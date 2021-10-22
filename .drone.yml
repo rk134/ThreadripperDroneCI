@@ -3,7 +3,7 @@ name: Retarded Kernel (4.9)
 
 steps:
 - name: Getting retarded
-  image: okta10/docker:debian
+  image: fr3akyphantom/droid-builder:focal
   environment: 
     ID:
       from_secret: ID
