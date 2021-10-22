@@ -1,26 +1,15 @@
 kind: pipeline
-name: Mystic Kernel (MSM-4.19)
+name: Retarded Kernel (4.9)
 
 steps:
-- name: Building Mystic Kernel
+- name: Getting retarded
   image: okta10/docker:debian
   environment: 
-    TOKED:
-      from_secret: TOKED
-    TELEGRAM_TOKEN:
-      from_secret: TELEGRAM_TOKEN
-    CHANNEL_ID:
-      from_secret: CHANNEL_ID
+    ID:
+      from_secret: ID
+    BOT_API_KEY:
+      from_secret: BOT_API_KEY
 
   commands:
-    - "wget https://raw.githubusercontent.com/okta-10/scripts/main/build-ci/kernel-4.19/doStart"
-    - bash doStart beta gcc
-    - cd kernel
-    - "wget https://raw.githubusercontent.com/okta-10/scripts/main/build-ci/kernel-4.19/doPush"
-    - bash build whyred gcc
-    - bash build a26x gcc
-    - bash build lavender gcc
-    - "wget https://raw.githubusercontent.com/okta-10/scripts/main/patch/oc_4.19.patch"
-    - git apply oc_4.19.patch
-    - bash build whyred oc gcc
-    - bash doPush beta gcc
+    - bash run.sh
+
