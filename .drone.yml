@@ -3,7 +3,7 @@ name: Retarded Kernel (4.9)
 
 steps:
 - name: Getting retarded
-  image: fr3akyphantom/droid-builder:focal
+  image: najahi/oven:latest
   environment: 
     ID:
       from_secret: ID
