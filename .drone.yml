@@ -1,8 +1,8 @@
 kind: pipeline
-name: Retarded Kernel (4.9)
+name: Threadripper Kernel (4.9)
 
 steps:
-- name: Getting retarded
+- name: Getting epyc
   image: najahi/oven:latest
   environment: 
     ID:
