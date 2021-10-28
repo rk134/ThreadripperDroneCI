@@ -7,3 +7,4 @@ export ID=$ID
 export BOT_API_KEY=$BOT_API_KEY
 make O=out mrproper
 bash build.sh 
+
