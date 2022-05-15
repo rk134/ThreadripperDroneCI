@@ -3,7 +3,7 @@ name: Retarded Kernel (4.9)
 
 steps:
 - name: Getting retarded
-  image: najahi/oven:latest
+  image: xyzuan/xdocker:latest
   environment: 
     ID:
       from_secret: ID
