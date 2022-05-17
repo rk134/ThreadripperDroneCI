@@ -3,11 +3,11 @@ name: Retarded Kernel (4.9)
 
 steps:
 - name: Getting retarded
-  image: xyzuan/xdocker:latest
+  image: debian
   environment: 
-    ID:
+    CHANNEL_ID:
       from_secret: CHANNEL_ID
-    BOT_API_KEY:
+    TELEGRAM_TOKEN:
       from_secret: TELEGRAM_TOKEN
 
   commands:
