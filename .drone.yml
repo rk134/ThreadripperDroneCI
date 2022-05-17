@@ -3,7 +3,7 @@ name: Retarded Kernel (4.9)
 
 steps:
 - name: Getting retarded
-  image: debian
+  image: jebaitedneko/kernel
   environment: 
     CHANNEL_ID:
       from_secret: CHANNEL_ID
