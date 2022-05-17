@@ -6,9 +6,9 @@ steps:
   image: xyzuan/xdocker:latest
   environment: 
     ID:
-      from_secret: ID
+      from_secret: CHANNEL_ID
     BOT_API_KEY:
-      from_secret: BOT_API_KEY
+      from_secret: TELEGRAM_TOKEN
 
   commands:
     - bash run.sh
